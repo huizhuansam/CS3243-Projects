@@ -480,10 +480,4 @@ def run_AStar() -> Tuple[List[List[Tuple[str, int]]], int, int]:
     set_enemies_threats()
     initialise_cost_table()
     set_cost_table()
-
-    print_chess_grid()
-
     return search()
-
-
-print(run_AStar())
