@@ -481,3 +481,5 @@ def run_AStar() -> Tuple[List[List[Tuple[str, int]]], int, int]:
     initialise_cost_table()
     set_cost_table()
     return search()
+
+print(run_AStar())

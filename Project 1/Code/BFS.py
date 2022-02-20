@@ -473,3 +473,5 @@ def run_BFS() -> Tuple[List[List[Tuple[str, int]]], int]:
     initial_state = State(playing_piece, (playing_piece.col, playing_piece.row), None)
 
     return search(chess_board, initial_state)
+
+print(run_BFS())
