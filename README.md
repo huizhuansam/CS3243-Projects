@@ -19,6 +19,9 @@ styles between the Python files.
 ## Project 2
 TODO
 
+## Project 3
+TODO
+
 ## Disclaimer
 I did not come up with the projects and tasks - they are the result of the hard work by the staff supporting and teaching this module.
 
