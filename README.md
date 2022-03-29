@@ -17,7 +17,26 @@ not bother with OOP anymore, proceeded to break every principle and made everyth
 styles between the Python files.
 
 ## Project 2
-TODO
+Task 1: Playing chess again but now its on applying local search! My approach to solving this problem was to model the relationship between the chess 
+pieces as an undirected graph (credits to [Russell](https://github.com/RussellDash332) for the idea), and the aim is to remove certain number of 
+vertices such that all the edges in the graph are removed. The algorithm I used was beam search with random restart. It definitely struggled for 
+large testcases, but by introducing randomness in the mix, it was able to perform under 6 seconds at best on some runs. The tricky part was to find a 
+suitable beam size, and I found that a beam size of k where k is the minimum number of pieces left on the board performed reasonably well. Although 
+I am happy that it finally passes all the testcases, I can't justify spending 2 weeks on this task alone. This sucks.
+
+Task 2: Playing chess again but now its on applying CSP/backtracking. Tried to use AC-3 but it was too slow, so I just relied on forward checking to 
+knock out the domains. Turns out, forward checking is actually quite efficient! Some other optimisation tricks I used were:
+* Memoisation
+  * To avoid recomputing each pieces threat on every position on the board, I used a Dict to store all the computed piece threats since it does not 
+    change.
+* Most restricted variable heuristic
+  * Simply by assigning the piece with the least number of occupiable positions first.
+* Least restricted value heuristic
+  * By enforcing the order of piece checking to follow Queen -> Bishop -> Rook -> Knight -> King.
+* Random position assignment
+  * Randomness to the rescue!
+
+Unlike local search, CSP was much more manageable. All of my testcases have runtimes under 0.1 seconds, so that makes me a very happy man indeed.
 
 ## Project 3
 TODO
