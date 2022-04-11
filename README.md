@@ -1,5 +1,5 @@
 # CS3243-Projects
-A repository of my solutions for CS3243 - Introduction to Artificial Intelligence project assignments. Passes all test cases on codePost (for now).
+A repository of my solutions for CS3243 - Introduction to Artificial Intelligence project assignments. Passes all test cases on codePost.
 
 ## Project 1
 Project 1's task is to apply classic search algorithms (BFS, DFS, UCS/Dijkstra's, A*) on a fun chess puzzle: the King's Maze. 
@@ -16,6 +16,15 @@ not bother with OOP anymore, proceeded to break every principle and made everyth
 – which included debugging with cryptid feedback on codePost within 2 hours, hence this should explain why there's such a difference in the programming
 styles between the Python files.
 
+**codePost results:**
+![](./assets/BFS.png)
+
+![](./assets/DFS.png)
+
+![](./assets/UCS.png)
+
+![](./assets/AStar.png)
+
 ## Project 2
 Task 1: Playing chess again but now its on applying local search! My approach to solving this problem was to model the relationship between the chess 
 pieces as an undirected graph (credits to [Russell](https://github.com/RussellDash332) for the idea), and the aim is to remove certain number of 
@@ -23,6 +32,10 @@ vertices such that all the edges in the graph are removed. The algorithm I used 
 large testcases, but by introducing randomness in the mix, it was able to perform under 6 seconds at best on some runs. The tricky part was to find a 
 suitable beam size, and I found that a beam size of k where k is the minimum number of pieces left on the board performed reasonably well. Although 
 I am happy that it finally passes all the testcases, I can't justify spending 2 weeks on this task alone. This sucks.
+
+**codePost results:**
+
+![](./assets/LocalSearch.png)
 
 Task 2: Playing chess again but now its on applying CSP/backtracking. Tried to use AC-3 but it was too slow, so I just relied on forward checking to 
 knock out the domains. Turns out, forward checking is actually quite efficient! Some other optimisation tricks I used were:
@@ -38,8 +51,28 @@ knock out the domains. Turns out, forward checking is actually quite efficient! 
 
 Unlike local search, CSP was much more manageable. All of my testcases have runtimes under 0.1 seconds, so that makes me a very happy man indeed.
 
+**codePost results:**
+
+![](./assets/CSP.png)
+
 ## Project 3
 TODO
+
+Win rates:
+
+Bot 1: 100%
+
+Bot 2: 100%
+
+Bot 3: 96%
+
+Bot 4: 100%
+
+Bot 5: 100%
+
+**codePost results:**
+
+![](./assets/AdverserialSearch.png)
 
 ## Disclaimer
 I did not come up with the projects and tasks - they are the result of the hard work by the staff supporting and teaching this module.
