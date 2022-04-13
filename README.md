@@ -56,7 +56,10 @@ Unlike local search, CSP was much more manageable. All of my testcases have runt
 ![](./assets/CSP.png)
 
 ## Project 3
-TODO
+Task: apply minimax algorithm with alpha-beta pruning on a game of minichess. I was quite paranoid that my bot would not win against the autograder 
+bot, so I fed it with some stronk evaluation function. It's basically material value + piece square table + king safety. Search depth could only go 
+up to 3 or else the autograder will timeout. Found out from another friend that he could beat the autograder bot without ab pruning and only search 
+depth of 2 kinda pissed me off. Could have spent the time coding somewhere else instead of dealing with the project.
 
 Win rates:
 
@@ -69,6 +72,11 @@ Bot 3: 96%
 Bot 4: 100%
 
 Bot 5: 100%
+
+**Thoughts:**
+
+This project was a huge time sink and totally not worth my time TBH. The project description has misled me to implement some complicated game logic 
+where I spent 90% of my time trying and failing to debug. Also learnt that `math.inf` is not larger than `math.inf` the hard way.
 
 **codePost results:**
 
